@@ -1,0 +1,126 @@
+
+*****************************************************
+Summary
+-------
+Generated at: 2018-09-26T15:39:50+08:00
+
+Notes: 0
+Binaries: 0
+Archives: 0
+Standards: 3
+
+Apache Licensed: 0
+Generated Documents: 0
+
+JavaDocs are generated, thus a license header is optional.
+Generated files do not require license headers.
+
+3 Unknown Licenses
+
+*****************************************************
+
+Files with unapproved licenses:
+
+  pom.xml
+  src/main/java/com/ouym/demo/model/User.java
+  src/main/java/com/ouym/demo/service/UserService.java
+
+*****************************************************
+
+*****************************************************
+  Files with Apache License headers will be marked AL
+  Binary files (which do not require any license headers) will be marked B
+  Compressed archives will be marked A
+  Notices, licenses etc. will be marked N
+ !????? pom.xml
+ !????? src/main/java/com/ouym/demo/model/User.java
+ !????? src/main/java/com/ouym/demo/service/UserService.java
+ 
+*****************************************************
+
+ Printing headers for text files without a valid license header...
+ 
+=====================================================
+== File: pom.xml
+=====================================================
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <parent>
+        <artifactId>boot-dubbo</artifactId>
+        <groupId>com.ouym</groupId>
+        <version>1.0-SNAPSHOT</version>
+    </parent>
+    <modelVersion>4.0.0</modelVersion>
+
+    <artifactId>dubbo-api</artifactId>
+    <packaging>jar</packaging>
+    <version>1.0-SNAPSHOT</version>
+
+
+</project>
+
+=====================================================
+== File: src/main/java/com/ouym/demo/model/User.java
+=====================================================
+package com.ouym.demo.model;
+
+import java.io.Serializable;
+
+/**
+ * @Author: ouym
+ * @Description:
+ * @Date: Created in 14:12 2018/9/26
+ * @Modified By:
+ */
+public class User implements Serializable {
+    private int id;
+    private String username;
+    private String password;
+
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
+    }
+
+    public String getUsername() {
+        return username;
+    }
+
+    public void setUsername(String username) {
+        this.username = username;
+    }
+
+    public String getPassword() {
+        return password;
+    }
+
+    public void setPassword(String password) {
+        this.password = password;
+    }
+}
+
+=====================================================
+== File: src/main/java/com/ouym/demo/service/UserService.java
+=====================================================
+package com.ouym.demo.service;
+
+
+import com.ouym.demo.model.User;
+
+/**
+ * @Author: ouym
+ * @Description:
+ * @Date: Created in 19:40 2018/9/21
+ * @Modified By:
+ */
+
+public interface UserService {
+
+    User getById(Integer userId);
+
+}
